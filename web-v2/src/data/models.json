@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "consulted": "2026-10-03",
+    "window": [
+      "2026-09-01",
+      "2026-09-30"
+    ],
+    "selection": "Principais lançamentos de LLMs e modelos multimodais verificados em setembro 2026, com foco em fornecedores relevantes para uso empresarial (OpenAI, Anthropic, Google, DeepSeek, Alibaba, xAI).",
+    "notes": [
+      "Datas de lançamento seguem o anúncio oficial do fornecedor; a disponibilização no Databricks aparece separada, com data e link próprios.",
+      "Artificial Analysis Intelligence Index v4.3.2 consultado em 03/10/2026, depois dos lançamentos; a pontuação não representa o que era conhecido na data de cada anúncio.",
+      "Pontuações do índice valem para a configuração indicada (ex.: max effort) e não devem ser comparadas entre configurações diferentes.",
+      "Resultados divulgados pelo fornecedor (Gemini 4 Argon) não são avaliações independentes nem comparáveis ao índice agregado.",
+      "Curadoria não exaustiva: principais lançamentos verificados de LLMs e modelos multimodais relevantes para uso empresarial."
+    ],
+    "arrivalsNote": "Todos os modelos disponibilizados no Databricks em setembro 2026 foram lançados pelos fornecedores no próprio mês de setembro."
+  },
+  "launches": [
+    {
+      "id": "claude-fable-5-1",
+      "date": "2026-09-01",
+      "vendor": "Anthropic",
+      "vendorKey": "anthropic",
+      "model": "Claude Fable 5.1",
+      "familyKey": "claude",
+      "access": "available",
+      "accessNote": null,
+      "summary": "Sucessor do Claude Fable 5, com desempenho superior em programação e trabalho de conhecimento, segundo a Anthropic. Introduz as Enterprise Frontier Safeguards, com retenção de dados em infraestrutura controlada pelo cliente.",
+      "differentiator": {
+        "axis": "Eficiência",
+        "text": "Preço cerca de 25% menor que o Fable 5 em cargas típicas e até ~45% em trabalho agêntico, segundo a Anthropic."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "53",
+          "scale": "0–100",
+          "config": "max effort",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/releases/claude-fable-5-1"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível como modelo hospedado pela Databricks",
+        "date": "2026-09-01",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#anthropic-claude-fable-51-now-available-as-a-databricks-hosted-model"
+      },
+      "links": {
+        "announcement": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "evaluation": "https://artificialanalysis.ai/models/releases/claude-fable-5-1"
+      }
+    },
+    {
+      "id": "claude-mythos-5-1",
+      "date": "2026-09-01",
+      "vendor": "Anthropic",
+      "vendorKey": "anthropic",
+      "model": "Claude Mythos 5.1",
+      "familyKey": "claude",
+      "access": "limited",
+      "accessNote": "Acesso restrito a profissionais verificados pelos programas Cyber Verification e Life Sciences Verification da Anthropic.",
+      "summary": "Mesmo modelo do Claude Fable 5.1, com níveis diferentes de salvaguardas. Destinado a trabalho de segurança defensiva e pesquisa em ciências da vida.",
+      "differentiator": {
+        "axis": "Raciocínio",
+        "text": "Salvaguardas ajustadas para domínios de alto risco, com acesso controlado por programas de verificação."
+      },
+      "benchmarks": [],
+      "databricks": null,
+      "links": {
+        "announcement": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "evaluation": null
+      }
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "date": "2026-09-02",
+      "vendor": "Google",
+      "vendorKey": "google",
+      "model": "Gemini 3.8 Flash",
+      "familyKey": "gemini",
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo Flash da Google com ganhos sobre o 3.7 Flash em engenharia de software e raciocínio, mantendo a mesma velocidade e o custo baixo da versão anterior, segundo a Google. Em tarefas complexas, executa passos extras de raciocínio e chama ferramentas de forma iterativa.",
+      "differentiator": {
+        "axis": "Eficiência",
+        "text": "US$ 0,75 por milhão de tokens de entrada e US$ 3,75 de saída. A variante 3.8 Flash Cyber, para segurança, é restrita ao Programa Fairwind."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "41",
+          "scale": "0–100",
+          "config": "high",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/gemini-3-8-flash"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível como modelo hospedado pela Databricks",
+        "date": "2026-09-02",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#google-gemini-38-flash-now-available-as-a-databricks-hosted-model"
+      },
+      "links": {
+        "announcement": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "evaluation": "https://artificialanalysis.ai/models/gemini-3-8-flash"
+      }
+    },
+    {
+      "id": "gpt-6-astra",
+      "date": "2026-09-03",
+      "vendor": "OpenAI",
+      "vendorKey": "openai",
+      "model": "GPT-6 Astra",
+      "familyKey": null,
+      "access": "limited",
+      "accessNote": "Liberado primeiro a um conjunto limitado de organizações e depois a clientes pagos do ChatGPT e parceiros de API; capacidades de cibersegurança de alto risco ficam restritas a organizações aprovadas.",
+      "summary": "Modelo principal da série GPT-6, com foco em uso de computador (navegação e automação de interfaces), raciocínio complexo e programação, segundo a OpenAI. Aceita entrada de texto e imagem.",
+      "differentiator": {
+        "axis": "Ferramentas",
+        "text": "Execução de fluxos de várias etapas em navegador hospedado, com orquestração de ferramentas e chamadas assíncronas na Responses API."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "53",
+          "scale": "0–100",
+          "config": "max",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/gpt-6-astra"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-04",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-6-astra-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://openai.com/index/gpt-6-astra/",
+        "evaluation": "https://artificialanalysis.ai/models/gpt-6-astra"
+      }
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "date": "2026-09-10",
+      "vendor": "DeepSeek",
+      "vendorKey": "deepseek",
+      "model": "DeepSeek V4.1 Flash",
+      "familyKey": null,
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo MoE de 552B parâmetros com nova arquitetura encoder–decoder assimétrica: 8B parâmetros ativos na entrada e 16B na saída. Tem compreensão visual nativa e pesos abertos no Hugging Face.",
+      "differentiator": {
+        "axis": "Eficiência",
+        "text": "Cache KV com 1/4 da HBM e 1/8 do armazenamento SSD da geração anterior, segundo a DeepSeek."
+      },
+      "benchmarks": [],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-11",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#deepseek-v41-flash-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+        "evaluation": null
+      }
+    },
+    {
+      "id": "qwen-3-8-omni-flash",
+      "date": "2026-09-17",
+      "vendor": "Alibaba",
+      "vendorKey": "alibaba",
+      "model": "Qwen3.8-Omni-Flash",
+      "familyKey": "qwen",
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo omnimodal que aceita texto, imagem, áudio e vídeo como entrada, com saída em texto. Oferece modos com e sem raciocínio (thinking e non-thinking).",
+      "differentiator": {
+        "axis": "Multimodalidade",
+        "text": "Entrada nativa de texto, imagem, áudio e vídeo em um único modelo, disponível via API no Alibaba Cloud Model Studio."
+      },
+      "benchmarks": [],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-17",
+        "clouds": null,
+        "url": null
+      },
+      "links": {
+        "announcement": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "evaluation": null
+      }
+    },
+    {
+      "id": "grok-4-7",
+      "date": "2026-09-21",
+      "vendor": "xAI",
+      "vendorKey": "xai",
+      "model": "Grok 4.7",
+      "familyKey": null,
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo da xAI para programação e trabalho de conhecimento, treinado para trabalhar mais tempo em tarefas difíceis e verificar o próprio trabalho. Disponível no Cursor, no Grok Build, na Grok API e em plataformas de nuvem.",
+      "differentiator": {
+        "axis": "Programação",
+        "text": "Segundo a xAI, duas vezes mais rápido e pela metade do preço de modelos comparáveis, com melhor gestão de contexto longo."
+      },
+      "benchmarks": [],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-28",
+        "clouds": "AWS · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#xai-grok-47-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://x.ai/news/grok-4-7",
+        "evaluation": null
+      }
+    },
+    {
+      "id": "claude-opus-5-5",
+      "date": "2026-09-22",
+      "vendor": "Anthropic",
+      "vendorKey": "anthropic",
+      "model": "Claude Opus 5.5",
+      "familyKey": "claude",
+      "access": "available",
+      "accessNote": null,
+      "summary": "Desempenho no nível do Claude Fable 5.1 na maior parte do trabalho, segundo a Anthropic, com destaque em programação agêntica, uso de computador e trabalho de conhecimento.",
+      "differentiator": {
+        "axis": "Programação",
+        "text": "Custa 40% menos que o Opus 5 em cargas típicas; tokens de entrada e saída a US$ 4 e US$ 20 por milhão, segundo a Anthropic."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "58",
+          "scale": "0–100",
+          "config": "max effort",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/claude-opus-5-5"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#anthropic-claude-opus-55-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://www.anthropic.com/claude-opus-5-5",
+        "evaluation": "https://artificialanalysis.ai/models/claude-opus-5-5"
+      }
+    },
+    {
+      "id": "gpt-6-luna",
+      "date": "2026-09-22",
+      "vendor": "OpenAI",
+      "vendorKey": "openai",
+      "model": "GPT-6 Luna",
+      "familyKey": null,
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo mais eficiente da família GPT-6, para tarefas focadas e de alto volume. Janela de contexto de 1.050.000 tokens, até 128.000 tokens de saída e entrada de texto e imagem.",
+      "differentiator": {
+        "axis": "Eficiência",
+        "text": "US$ 0,10 por milhão de tokens de entrada e US$ 0,50 de saída (preço padrão da OpenAI)."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "38",
+          "scale": "0–100",
+          "config": "max",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/gpt-6-luna"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-6-luna-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "evaluation": "https://artificialanalysis.ai/models/gpt-6-luna"
+      }
+    },
+    {
+      "id": "gpt-6-sol",
+      "date": "2026-09-22",
+      "vendor": "OpenAI",
+      "vendorKey": "openai",
+      "model": "GPT-6 Sol",
+      "familyKey": null,
+      "access": "available",
+      "accessNote": null,
+      "summary": "Modelo da família GPT-6 para programação complexa e fluxos agênticos. Janela de contexto de 1.050.000 tokens, até 128.000 tokens de saída e entrada de texto e imagem.",
+      "differentiator": {
+        "axis": "Programação",
+        "text": "US$ 2 por milhão de tokens de entrada e US$ 10 de saída (preço padrão da OpenAI)."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "48",
+          "scale": "0–100",
+          "config": "max",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/gpt-6-sol"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-6-sol-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "evaluation": "https://artificialanalysis.ai/models/gpt-6-sol"
+      }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "date": "2026-09-28",
+      "vendor": "Anthropic",
+      "vendorKey": "anthropic",
+      "model": "Claude Sonnet 5.5",
+      "familyKey": "claude",
+      "access": "available",
+      "accessNote": null,
+      "summary": "Voltado a tarefas cotidianas bem delimitadas, correção de bugs e criação de documentos, slides e planilhas, segundo a Anthropic. Mantém o preço do Sonnet 5: US$ 2 e US$ 10 por milhão de tokens de entrada e saída.",
+      "differentiator": {
+        "axis": "Eficiência",
+        "text": "Gera saídas mais de 30% mais rápido que o Sonnet 5 e custa até 30% menos por tarefa, segundo a Anthropic."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "56",
+          "scale": "0–100",
+          "config": "max effort",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível via Foundation Model APIs (databricks-claude-sonnet-5-5)",
+        "date": "2026-09-28",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models"
+      },
+      "links": {
+        "announcement": "https://www.anthropic.com/claude-sonnet-5-5",
+        "evaluation": "https://artificialanalysis.ai/models/claude-sonnet-5-5"
+      }
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "date": "2026-09-29",
+      "vendor": "OpenAI",
+      "vendorKey": "openai",
+      "model": "GPT-6.1 Sol",
+      "familyKey": null,
+      "access": "available",
+      "accessNote": null,
+      "summary": "Nova versão do Sol para programação complexa e trabalho profissional; segundo a OpenAI, oferece capacidade semelhante à do GPT-6 Astra com custo substancialmente menor.",
+      "differentiator": {
+        "axis": "Ferramentas",
+        "text": "Suporte a multi-agente (Beta) pela Responses API, com delegação e chamadas de ferramentas."
+      },
+      "benchmarks": [
+        {
+          "index": "Artificial Analysis Intelligence Index",
+          "version": "4.3.2",
+          "score": "52",
+          "scale": "0–100",
+          "config": "max",
+          "evaluator": "independent",
+          "date": "2026-10-03",
+          "dateKind": "consulted",
+          "rank": null,
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-sol"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-29",
+        "clouds": "AWS · Azure · GCP",
+        "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#openai-gpt-61-sol-is-now-available-on-unity-gateway"
+      },
+      "links": {
+        "announcement": "https://developers.openai.com/api/docs/changelog",
+        "evaluation": "https://artificialanalysis.ai/models/gpt-6-1-sol"
+      }
+    },
+    {
+      "id": "gemini-4-argon",
+      "date": "2026-09-30",
+      "vendor": "Google",
+      "vendorKey": "google",
+      "model": "Gemini 4 Argon",
+      "familyKey": "gemini",
+      "access": "limited",
+      "accessNote": "Em liberação pelo Programa Fairwind para defensores cibernéticos de confiança; acesso amplo para desenvolvedores, empresas e consumidores ainda planejado.",
+      "summary": "Modelo da série Gemini 4 voltado a engenharia de software, automação de negócios e compreensão de vídeos longos. Limite de saída de 1 milhão de tokens (antes, 64 mil), segundo a Google.",
+      "differentiator": {
+        "axis": "Programação",
+        "text": "DeepSWE v1.1 de 77,9% e LVBench de 91,7%, segundo a Google."
+      },
+      "benchmarks": [
+        {
+          "index": "DeepSWE v1.1",
+          "version": null,
+          "score": "77.9",
+          "scale": "% de acerto",
+          "config": null,
+          "evaluator": "vendor",
+          "date": "2026-09-30",
+          "dateKind": "evaluated",
+          "rank": null,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "index": "LVBench (vídeo longo)",
+          "version": null,
+          "score": "91.7",
+          "scale": "% de acerto",
+          "config": null,
+          "evaluator": "vendor",
+          "date": "2026-09-30",
+          "dateKind": "evaluated",
+          "rank": null,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        }
+      ],
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-30",
+        "clouds": null,
+        "url": null
+      },
+      "links": {
+        "announcement": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "evaluation": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      }
+    }
+  ],
+  "arrivals": []
+}

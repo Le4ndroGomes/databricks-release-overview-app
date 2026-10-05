@@ -1,0 +1,258 @@
+{
+  "researched_at": "2026-10-02",
+  "launches": [
+    {
+      "date": "2026-09-01",
+      "vendor": "Anthropic",
+      "model": "Claude Fable 5.1",
+      "access": "available",
+      "summary": "Modelo mais robusto da Anthropic com melhorias em escrita, programação e resistência a prompt injection. Inclui marca d'água estatística em outputs para indicar autoria por IA.",
+      "differentiator": "Robustez contra prompt injection, marca d'água estatística, redesenhado para escrita e conhecimento profundo",
+      "category": "eficiência",
+      "official_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "eval": {
+        "index": "Artificial Analysis Intelligence Index",
+        "version": "v4.3.2",
+        "score": 53,
+        "scale": "Intelligence Index (max effort)",
+        "config": "max effort",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://artificialanalysis.ai/models/releases/claude-fable-5-1",
+        "independent": true
+      },
+      "databricks": {
+        "status": "Disponível como modelo hospedado pela Databricks",
+        "date": "2026-09-01",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-02",
+      "vendor": "Google",
+      "model": "Gemini 3.8 Flash",
+      "access": "available",
+      "summary": "Melhor desempenho de raciocínio e codificação do Google mantendo a mesma velocidade e baixo custo da versão anterior. Integrado a Search Live, Gemini Live e Google Workspace.",
+      "differentiator": "Raciocínio e codificação melhorados, mesmo custo que 3.7 Flash, múltiplas variantes (regular e Cyber)",
+      "category": "raciocínio",
+      "official_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "eval": {
+        "index": "Artificial Analysis Intelligence Index",
+        "version": "v4.3.2",
+        "score": 41,
+        "scale": "Intelligence Index (High config)",
+        "config": "High",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://artificialanalysis.ai/models/gemini-3-8-flash/",
+        "independent": true
+      },
+      "databricks": {
+        "status": "Disponível como modelo hospedado pela Databricks",
+        "date": "2026-09-02",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-03",
+      "vendor": "OpenAI",
+      "model": "GPT-6 Astra",
+      "access": "limited",
+      "summary": "Modelo frontier com acesso controlado, focado em processamento de documentos estruturados, raciocínio empresarial e codificação. Lançamento em fases com materiais de segurança detalhados.",
+      "differentiator": "Raciocínio estruturado, processamento de documentos, acesso inicial controlado, modelo frontier",
+      "category": "raciocínio",
+      "official_url": "https://openai.com/index/safety-overview-gpt-6-astra/",
+      "eval": {
+        "index": "LMArena Text Board",
+        "version": "Snapshot 2026-09-22",
+        "score": 1479.77,
+        "scale": "Elo",
+        "config": "max",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://www.benchmarkheaven.com/benchmarks/result?axis=lmarena-text",
+        "independent": true
+      },
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-04",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-10",
+      "vendor": "DeepSeek",
+      "model": "DeepSeek V4.1 Flash",
+      "access": "available",
+      "summary": "Variante otimizada do V4.1 com visão nativa, redução de custo e latência. Modelo MoE com suporte a entrada de texto e imagem.",
+      "differentiator": "Visão nativa, otimização de custo/latência, roteamento flexível MoE, routing a partir de 14 setembro",
+      "category": "eficiência",
+      "official_url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "eval": {
+        "index": "Artificial Analysis Intelligence Index",
+        "version": "v4.3.2",
+        "score": null,
+        "scale": null,
+        "config": null,
+        "consulted_date": "2026-10-02",
+        "source_url": null,
+        "independent": null
+      },
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-11",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-18",
+      "vendor": "Alibaba",
+      "model": "Qwen3.8-Omni-Flash",
+      "access": "available",
+      "summary": "Modelo omni-modal nativo que aceita texto, imagens, áudio e vídeo em uma única chamada. Contexto muito grande de ~1M tokens, disponível como API hospedada.",
+      "differentiator": "Multimodalidade omni-nativa (texto, imagem, áudio, vídeo), contexto de ~1M tokens, sem pesos abertos no lançamento",
+      "category": "multimodal",
+      "official_url": "https://theroboticsmedia.com/article/alibaba-qwen3-8-omni-flash-1m-context-multimodal-agentic-audio-video-september-18-2026",
+      "eval": null,
+      "databricks": null,
+      "logo": null
+    },
+    {
+      "date": "2026-09-21",
+      "vendor": "xAI",
+      "model": "Grok 4.7",
+      "access": "limited",
+      "summary": "Versão melhorada do Grok com raciocínio aprimorado e performance de codificação. Lançado em fases, disponível em plataformas parceiras.",
+      "differentiator": "Raciocínio estruturado, codificação melhorada, lançamento em fases, integração de parceiros",
+      "category": "raciocínio",
+      "official_url": "https://x.ai/news/grok-4-7",
+      "eval": null,
+      "databricks": {
+        "status": "Disponível no Unity Gateway (AWS e GCP)",
+        "date": "2026-09-28",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-22",
+      "vendor": "OpenAI",
+      "model": "GPT-6 Luna",
+      "access": "available",
+      "summary": "Modelo balanceado da série GPT-6, lançado para API, ChatGPT Work e Codex. Foco em performance geral com bom equilíbrio entre velocidade e qualidade.",
+      "differentiator": "Balanceamento velocidade/qualidade, disponível em múltiplas plataformas OpenAI, modelo da série GPT-6",
+      "category": "raciocínio",
+      "official_url": "https://developers.openai.com/api/docs/changelog",
+      "eval": null,
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-22",
+      "vendor": "OpenAI",
+      "model": "GPT-6 Sol",
+      "access": "available",
+      "summary": "Modelo de alta performance da série GPT-6, otimizado para codificação e tarefas complexas. Disponível em API, ChatGPT Work e Codex.",
+      "differentiator": "Otimizado para codificação, performance superior em WebDev/Code, modelo flagship GPT-6",
+      "category": "programação",
+      "official_url": "https://developers.openai.com/api/docs/changelog",
+      "eval": {
+        "index": "LMArena WebDev/Code Board",
+        "version": "Snapshot 2026-09-22",
+        "score": 1800.3,
+        "scale": "Elo",
+        "config": "max",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://www.benchmarkheaven.com/benchmarks",
+        "independent": true
+      },
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-22",
+      "vendor": "Anthropic",
+      "model": "Claude Opus 5.5",
+      "access": "available",
+      "summary": "Primeiro modelo da família Claude 5.5, tuned para sessões longas e codificação intensiva. Custa ~40% menos que Opus 5 com performance comparable.",
+      "differentiator": "Otimizado para contexto longo, codificação, melhor reporting de tarefas, redução de 40% em custo vs Opus 5",
+      "category": "programação",
+      "official_url": "https://www.anthropic.com/claude-opus-5-5",
+      "eval": {
+        "index": "Artificial Analysis Intelligence Index",
+        "version": "v4.3.2",
+        "score": 58,
+        "scale": "Intelligence Index (max effort)",
+        "config": "max effort",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+        "independent": true
+      },
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-22",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    },
+    {
+      "date": "2026-09-28",
+      "vendor": "Anthropic",
+      "model": "Claude Sonnet 5.5",
+      "access": "available",
+      "summary": "Versão otimizada para velocidade da família Claude 5.5, 30% mais rápida que Sonnet 5 com menor consumo de tokens. Melhor custo-benefício para muitas tarefas.",
+      "differentiator": "30% mais rápido que Sonnet 5, menor consumo de tokens, melhor custo-benefício, contexto de 1M",
+      "category": "eficiência",
+      "official_url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "eval": {
+        "index": "Artificial Analysis Intelligence Index",
+        "version": "v4.3.2",
+        "score": 56,
+        "scale": "Intelligence Index (max effort)",
+        "config": "max effort",
+        "consulted_date": "2026-10-02",
+        "source_url": "https://artificialanalysis.ai/articles/claude-sonnet-5-5/",
+        "independent": true
+      },
+      "databricks": null,
+      "logo": null
+    },
+    {
+      "date": "2026-09-29",
+      "vendor": "OpenAI",
+      "model": "GPT-6.1 Sol",
+      "access": "available",
+      "summary": "Versão ponto-release do GPT-6 Sol com melhorias em estabilidade e performance. Disponível no Unity Gateway e via API OpenAI.",
+      "differentiator": "Release ponto do GPT-6 Sol, melhorias de estabilidade, otimizado para codificação",
+      "category": "programação",
+      "official_url": "https://developers.openai.com/api/docs/changelog",
+      "eval": null,
+      "databricks": {
+        "status": "Disponível no Unity Gateway",
+        "date": "2026-09-29",
+        "source_url": "https://docs.databricks.com/aws/en/release-notes/product/2026/september"
+      },
+      "logo": null
+    }
+  ],
+  "arrived_on_databricks": [],
+  "notes": [
+    "Pesquisa realizada em 2026-10-02, focando em lançamentos públicos verificados de setembro 2026",
+    "Modelos selecionados são os principais lançamentos de vendedores de IA enterprise (OpenAI, Anthropic, Google, DeepSeek, Alibaba, xAI)",
+    "Benchmarks: Artificial Analysis Intelligence Index (independente, metodologia v4.3.2), LMArena Text/Code boards (crowdsourced com timestamps)",
+    "Logos: Não foram obtidos nesta fase; requer acesso a kits de marca oficial de cada vendedor",
+    "Limitações: Kimi K3 de Moonshot lançado antes de setembro 2026 (janeiro 2025); modelos Cohere Command R sem novo lançamento em setembro 2026; Kakao/Kanana é iniciativa governamental (não lançamento comercial)",
+    "Claude Sonnet 5.5 foi adicionado ao final de setembro (28/09), completando a série Claude 5.5",
+    "Acesso: 'available' = acesso geral; 'limited' = fases/beta/acesso controlado; 'announced' = anunciado mas não disponível para acesso",
+    "Avaliação: scores não verificados para DeepSeek V4.1 Flash, xAI Grok 4.7, Alibaba Qwen3.8-Omni-Flash, GPT-6 Luna, GPT-6.1 Sol"
+  ]
+}

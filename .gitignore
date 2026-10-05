@@ -1,0 +1,44 @@
+# Dependencies / build output
+node_modules/
+dist/
+build/__pycache__/
+.cache/
+.tmp/
+tmp/
+
+# Databricks CLI state (contém host do workspace, caminhos e e-mail — não publicar)
+.databricks/
+*.databricks-sync*
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Secrets (nunca commitar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dados brutos de pesquisa (238 MB de páginas capturadas; não necessários ao projeto)
+raw/
+
+# Versão v1 superada e seus artefatos (o projeto publicado é a v2)
+web/
+databricks-monthly-brief-2026-09.html
+databricks-monthly-brief-2026-09.pdf
+release-overview-2026-09.html
+release-overview-2026-09.pdf
+release-overview-2026-09.png

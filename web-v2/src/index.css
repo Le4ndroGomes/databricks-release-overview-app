@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* Design tokens — identidade Databricks em fundo branco */
+@theme {
+  --font-sans: "DM Sans Variable", "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --color-ink: #0B2026;      /* texto principal, GA */
+  --color-navy: #1B3139;     /* superfície escura */
+  --color-body: #44606B;     /* texto secundário · 6.7:1 em branco */
+  --color-muted: #5B7680;    /* metadados · 4.8:1 em branco */
+  --color-line: #E4E9EB;
+  --color-line-strong: #C9D4D8;
+  --color-oat: #F9F7F4;
+  --color-oat-2: #EEEDE9;
+  --color-lava: #FF3621;     /* acento único: marcadores e numerais grandes */
+
+  /* Maturidade — rampa ordinal de um matiz (validada: Beta → Public Preview → GA) */
+  --color-ga: #0B2026;
+  --color-pupr: #3E7380;
+  --color-beta: #8CAAB4;
+  --color-ni: #C9D4D8;
+  --color-na: #EEEDE9;
+}
+
+@layer base {
+  :root {
+    --nav-h: 60px;       /* altura da navbar sticky (h-[60px]) */
+    --anchor-gap: 8px;   /* folga abaixo da navbar; o padding-top da seção dá o respiro restante */
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* Offset único de âncora. As seções NÃO usam scroll-margin-top (evita somar dois offsets). */
+    scroll-padding-top: calc(var(--nav-h) + var(--anchor-gap));
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body { @apply bg-white text-ink font-sans; font-feature-settings: "ss01", "tnum"; }
+  ::selection { background: #FFD9D3; }
+  a { @apply underline-offset-4 decoration-line-strong; }
+  a:hover { @apply decoration-lava; }
+  :focus-visible { outline: 2px solid var(--color-lava); outline-offset: 3px; border-radius: 2px; }
+}
+
+/* Painéis recolhíveis sempre abertos no papel. Precisa ficar na layer base: o preflight do Tailwind
+   esconde [hidden] com !important nessa layer, e !important em layer vence CSS fora de layer. */
+@layer base {
+  @media print {
+    [data-print-expand][hidden] { display: block !important; }
+  }
+}
+
+@utility hatch {
+  background-image: repeating-linear-gradient(135deg, var(--color-ni) 0 2px, #F1F4F5 2px 5px);
+}
+@utility num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm 12mm;
+  }
+  html, body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Navigation, buttons, and controls */
+  [data-print-hide],
+  .print\:hidden {
+    display: none !important;
+  }
+  /* Preserve colors */
+  [style*="background"] {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Break handling */
+  article, li, [data-print-expand] {
+    break-inside: avoid;
+  }
+  h2, h3, header {
+    break-after: avoid;
+    break-inside: avoid;
+  }
+  /* Paisagem (A4 deitado, ~1032 px úteis a 100%): o layout desktop entra em vigor. Ritmo mais compacto. */
+  main > section { padding-block: 0; }
+  main > section > header { margin-bottom: 24px; }
+  /* Abertura como capa; cada seção começa em página nova (sem títulos órfãos) */
+  #topo { padding-block: 16px 0; break-after: page; }
+  #topo h1 { margin-top: 20px; font-size: 60px; }
+  #topo dl { margin-top: 24px; padding-top: 20px; row-gap: 20px; }
+  /* Seções que precisam caber numa página de paisagem */
+  #impacto ol { row-gap: 28px; }
+  #impacto ol > li { margin-top: 0; }
+  #acoes ol > li { padding-block: 16px; }
+  #panorama > div.grid > div { break-inside: avoid; }
+  footer { break-inside: avoid; }
+  main > section:not(#topo) { break-before: page; }
+  /* Lançamentos principais: um card por linha; no card, resumo à esquerda e detalhes à direita */
+  [data-print-stack] { display: block; }
+  [data-print-stack] > * + * { margin-top: 16px; }
+  #destaques article {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: 40px;
+    align-content: start;
+    padding: 28px 32px;
+  }
+  #destaques article > * { grid-column: 1; }
+  #destaques article > :last-child { grid-column: 2; grid-row: 1 / span 8; margin-top: 0; padding-top: 0; }
+  #destaques [data-print-expand] > div { margin-top: 0; padding-top: 0; border-top: 0; column-count: 2; column-gap: 32px; }
+  #destaques [data-print-expand] > div > * { break-inside: avoid; }
+  /* Índice: cada domínio em duas colunas */
+  [data-print-columns] { column-count: 2; column-gap: 40px; }
+  #modelos ol > li { padding-block: 20px; }
+}
